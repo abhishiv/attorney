@@ -1,0 +1,38 @@
+{
+  "name": "exami",
+  "version": "0.8.51",
+  "author": "Abhishiv Saxena<abhishiv@gmail.com>",
+  "license": "MIT",
+  "description": "Ultralean Testing framework for browser and node",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhishiv/attorney"
+  },
+  "files": [
+    "./dist"
+  ],
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "typescript": "^5.2.2",
+    "vitest": "^2.0.5"
+  },
+  "scripts": {
+    "build": "make build",
+    "test": "npx vitest --run --passWithNoTests",
+    "coverage": "vitest run --coverage --run --passWithNoTests",
+    "typecheck": "npx tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "buckwheat": "^1.1.2"
+  },
+  "peerDependencies": {}
+}
