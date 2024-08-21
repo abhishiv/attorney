@@ -1,6 +1,6 @@
 {
   "name": "exami",
-  "version": "0.8.51",
+  "version": "0.8.52",
   "author": "Abhishiv Saxena<abhishiv@gmail.com>",
   "license": "MIT",
   "description": "Ultralean Testing framework for browser and node",
